@@ -1,18 +1,23 @@
 body {
     text-align: center;
-    background-color: #283149;
+    background-color: #e0e0e0;
+    background-image: url("images/drums.png");
+    background-size: 50vh auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1 {
-    font-size: 5rem;
-    color: #DBEDF3;
+    font-size: 3rem;
+    color: black;
     font-family: "Arvo", cursive;
-    text-shadow: 3px 0 #DA0463;
+    text-shadow: 3px 0 grey;
 }
 
 footer {
-    color: #DBEDF3;
-    font-family: sans-serif;
+    color: black;
+    font-family: 'Arvo', cursive;
+    font-weight: bold;
 }
 
 .w {
@@ -53,8 +58,14 @@ footer {
 }
 
 .pressed {
-    box-shadow: 0 3px 4px 0 #DBEDF3;
-    opacity: 0.5;
+    border: 10px solid #404B69;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 10px 10px 20px #b3b3b3, -10px -10px 20px #ffffff;
+    position: relative;
+    border-color: #f0f8ff9e;
 }
 
 .red {
@@ -62,19 +73,21 @@ footer {
 }
 
 .drum {
-    outline: none;
-    border: 10px solid #404B69;
-    font-size: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
     font-family: 'Arvo', cursive;
-    line-height: 2;
-    font-weight: 900;
-    color: #DA0463;
-    text-shadow: 3px 0 #DBEDF3;
-    border-radius: 15px;
     display: inline-block;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    margin: 10px;
-    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    box-shadow: 10px 10px 20px #b3b3b3, -10px -10px 20px #ffffff;
+    position: relative;
+    border-color: #f0f8ff9e;
 }
