@@ -1,1 +1,1 @@
-# Drum-Kit - jQuery
+# Drum-Kit
